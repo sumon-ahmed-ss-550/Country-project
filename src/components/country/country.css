@@ -1,0 +1,11 @@
+.country {
+  border: 1px solid darkgreen;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+.img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(241, 237, 237);
+}
