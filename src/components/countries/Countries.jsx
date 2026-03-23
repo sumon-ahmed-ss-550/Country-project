@@ -23,6 +23,43 @@ const Countries = ({ countriesPromise }) => {
     <div>
       <div
         style={{
+          padding: "24px",
+          margin: "12px 0",
+          position: "sticky",
+          top: "0",
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "0",
+          backgroundColor: "white",
+          border: "1px solid darkgreen",
+          borderRadius: "8px",
+        }}
+      >
+        <input
+          id="input-search"
+          style={{
+            width: "220px",
+            maxWidth: "100%",
+            padding: "10px 24px",
+          }}
+          type="search"
+          placeholder="Country search..."
+        />
+        <button
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "darkgreen",
+            color: "white",
+            border: "none",
+            cursor: "pointer",
+          }}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+      <div
+        style={{
           border: "1px solid darkgreen",
           padding: "24px",
           borderRadius: "8px",
