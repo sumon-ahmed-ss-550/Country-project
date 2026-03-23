@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./country.css";
 
-const Country = ({ country }) => {
-  // console.log(country.area.area);
+const Country = ({ country, handleVisitedCountry }) => {
+  // console.log(country);
 
   const [visited, setVisited] = useState(false);
 
@@ -12,10 +12,11 @@ const Country = ({ country }) => {
     } else {
       setVisited(true);
     }
+    handleVisitedCountry(country);
   };
 
   return (
-    <div className={`country ${visited ? "visited-country" : ""}`}>
+    <div className={`country ${visited && "visited-country"}`}>
       <img
         className="img"
         src={country.flags.flags.png}
